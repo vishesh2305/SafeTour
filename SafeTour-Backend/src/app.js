@@ -26,6 +26,7 @@ try {
 app.use('/api/auth', require('./api/routes/authRoutes'));
 // app.use('/api/admin', require('./api/routes/adminRoutes'));
 app.use('/api/tourist', require('./api/routes/touristRoutes'));
+app.use('/api/alerts', require('./api/routes/alertRoutes.js')); // <-- ADD THIS LINE
 
 const PORT = config.port;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
